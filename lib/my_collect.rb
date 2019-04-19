@@ -20,6 +20,15 @@ def my_collect(array)
   return new_array
   
 
-  collect(array) do |lang| lang.upcase
-end
+ 
+end 
+def my_collect(array)
+  new_array=[]
+  i = 0 
+  while i< array.size 
+  yield array[i]
+  new_array[i]=array[i].upcase
+  i += 1 
+end 
+return new_array
 end 
