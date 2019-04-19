@@ -14,21 +14,16 @@ def my_collect(array)
   i = 0
   while i< array.size 
   yield array[i]
+  size_array=array[i].split(" ")
+  if size_array.size > 1
   new_array[i]=array[i].split(" ").first
   i += 1 
+else new_array[i]=array[i].upcase
+  i += 1 
   end
+end 
   return new_array
   
 
  
-end 
-def my_collection(array)
-  new_array=[]
-  i = 0 
-  while i< array.size 
-  yield array[i]
-  new_array[i]=array[i].upcase
-  i += 1 
-end 
-return new_array
 end 
