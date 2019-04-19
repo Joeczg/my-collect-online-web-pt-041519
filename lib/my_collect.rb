@@ -18,12 +18,7 @@ def my_collect(array)
   i += 1 
   end
   return new_array
-  while i < array.size 
-  yield array[i]
-  keep[i]=array[i].upcase
-  i += 1 
-end 
-return keep
+  
 
   
 end 
