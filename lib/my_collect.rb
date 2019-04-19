@@ -16,5 +16,5 @@ def my_collect(array)
   new_array[i]=array[i].split(" ").first
   i += 1 
   end
-  return array[i]
+  return new_array
 end 
