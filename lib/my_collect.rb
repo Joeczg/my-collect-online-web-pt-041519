@@ -22,7 +22,7 @@ def my_collect(array)
 
  
 end 
-def my_collect(array)
+def my_collection(array)
   new_array=[]
   i = 0 
   while i< array.size 
