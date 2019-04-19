@@ -20,5 +20,6 @@ def my_collect(array)
   return new_array
   
 
-  
+  collect(array) do |lang| lang.upcase
+end
 end 
