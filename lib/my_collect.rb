@@ -10,6 +10,7 @@ return collection
 end
 def my_collect(array)
   new_array=[]
+  keep =[]
   i = 0
   while i< array.size 
   yield array[i]
@@ -17,4 +18,12 @@ def my_collect(array)
   i += 1 
   end
   return new_array
+  while i < array.size 
+  yield array[i]
+  keep[i]=array[i].upcase
+  i += 1 
+end 
+return keep
+
+  
 end 
